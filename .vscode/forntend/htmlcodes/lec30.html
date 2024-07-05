@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
+    <!-- we have to use the link of the jsdelivr cdn of the latest version not the link provided in the youtube video  -->
+    <link rel = "stylesheet" href="style9.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="py-3 text-center">Bootstrap 4 Form Classes</h2>
+        <div class="row py-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                <label >Name</label>
+                <input type="text"  class="form-control " >
+                <!-- <input type="text"  class="form-control form-control-lg" > -->
+                <!-- <input type="text"  class="form-control form-control-sm" > -->
+
+              </div>
+              <div class="form-group">
+                <label >Email</label>
+                <input type="text" value="abc@gmail.com" class="form-control-plaintext" readonly>
+              </div>
+              <div class="form-group">
+                <label >Password</label>
+                <input type="password"   class="form-control" >
+                <small class="form-text text-muted">
+                        Your password must be 8-20 characters long.
+                </small>
+              </div>
+              <div class="form-group">
+                <label >Country</label>
+                <select name="" id=""  class="form-control" >
+                    <option value = ""> India</option>
+                    <option value = ""> Pakistan</option>
+                    <option value = ""> Bangladesh</option>
+                    <option value = "">Nepal</option>
+
+                    </select>
+              </div>
+              <div class="col-md-6">
+              <div class="form-group">
+                <label >File Upload</label>
+                <input type="file"  class="form-control-file" >
+              </div>
+              <div class="form-group">
+                <label >Amount</label>
+                <input type="range"  class="form-control-file" >
+              </div>
+
+              <div class="form-group">
+                <label >Hobbies</label>
+                <div class="form-check">
+
+                    <input type="checkbox"  class="form-check-input" id = "musicCheck">
+                    <label for="musicCheck" class="from-chck-label">Music</label>
+                </div>
+                <div class="form-check">
+
+                    <input type="checkbox"  class="form-check-input" id = "sportCheck">
+                    <label for="sportCheck" class="from-chck-label">Sports</label>
+                </div>
+                <div class="form-check">
+
+                    <input type="checkbox"  class="form-check-input" id = "bookCheck">
+                    <label for="bookCheck" class="from-chck-label">Books</label>
+                </div>
+              </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

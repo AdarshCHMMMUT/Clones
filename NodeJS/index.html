@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=di, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <div class="parent">
+            Parent
+            <div class="child">
+                child
+                 <h>grandchild1</h>
+                 <h>grandchild2</h>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script>
+    
+
+    let reactfile = React.createELement("div" , {class: "parent"}, {"parent", React.createElement  })
+    let root = ReactDOM.createRoot(document.getElementById("root"))
+    root.render(reactEle)
+</script>
+</html>

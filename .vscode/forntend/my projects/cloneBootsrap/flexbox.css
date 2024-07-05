@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    /* taki padding lagane ke bad usme kuchh dikkat na aaye  */
+ }
+body{
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+header
+{
+    background: #596b34;
+    /* ye kya karega jitna content usko bg color de dega aur flex lagane par simat kar do coloumn me aa jayega */
+    display: flex ;
+    align-items: center;
+    padding: 10px 0;
+}
+header ul{
+    list-style: none;
+    /* isase kya hoga ko point sa ban raha tha wo gayab ho jayega */
+    display: flex;
+    /* isase kya hog jintna bhi content ul me hoga uski flex ho jaygegi sab ek box me aa jayenge */
+   /* by default isme padding aa jati hai to ise kuchh padding de dete hai  */
+   padding: 0;
+   /* margin: 0; */
+   margin: 0 30px;
+}
+header a{
+    color: #fff
+}
+#logo {
+    margin: 0 auto;
+}
+aside{
+    flex: 0 0 20vw;
+    /* their order is flexgrow flex-shrink:  flex-basis:  */
+}
+#menu li{
+    padding: 10px;
+}
+#social-links li {
+    padding: 10px;
+}
+#main{
+    display: flex;
+}
+aside{
+    flex: 0 0 20vw;
+    background:beige ;
+    padding: 5px;
+}
+/* article{
+    padding: 5px;
+
+} */
+aside ul {
+    list-style: none;
+    
+}
+aside img{
+    padding-left: 50px;
+}
+aside ul li{
+    color: #596b34 ;
+    /* padding: 5px; */
+    display: block;
+    border-bottom: 1px solid grey;
+}
+.service-container{
+    display : flex;
+    justify-content: space-between;
+    /* margin: 0 30px; */
+}
+.service-box{
+    border: 1px solid #eee;
+    flex-basis:32% ;
+    max-width: 370px;
+    max-height:10%;
+    padding : 10px;
+    margin-bottom: 15px;
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+}
+.service-box img{
+   width: 100%;   
+}
+.service-box h3{
+    margin: 5px 0 10px;
+}
+.service-box p{
+    margin: 0 0 10px;
+}
+.call-to-action{
+    align-self: flex-start;
+    margin-top: auto;
+
+}
+.call-to-action a{
+    background: gray;
+    border: 2px solid transparent;
+    color: #fff;
+    padding: 4px 5 px;
+    display: block;
+
+}
+.call-to-action a:hover{
+    color:gray;
+    background: transparent;
+    border: 2px solid grey;
+}
+footer{
+    background: #596b34;
+    color: #fff;
+    text-align: center;
+    height: 60px;
+     padding: 15px 0;
+    
+}
+@media screen  and  ( max-width: 850px)
+{
+    .service-box{
+        flex-basis: 48%;
+    }
+}
+aside{
+    flex: 0 0 30vw;
+}
+@media screen  and  ( max-width: 600px)
+{
+    header{
+        flex-direction: column;
+    }
+    #logo{
+        order: -1;
+    }
+    #main{
+        flex-direction: column ;
+    }
+    article{
+        order: -1;
+    }
+    .service-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+aside{
+    flex: 0 0 30vw;
+}
+.upper{
+    padding: 60px;
+}
+#logo a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

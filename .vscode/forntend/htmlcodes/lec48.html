@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <!-- we have to use the link of the jsdelivr cdn of the latest version not the link provided in the youtube video  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#showBtn').click(function(){
+                $('#myModal').modal('show')
+                $('#myModal')
+            })
+
+            $('#myModal').on('shown.bs.modal',function(){
+                 alert('shown');
+            })
+            $('#myModal').on('hide.bs.modal',function(){
+                 alert('hide');
+            })
+        });
+    </script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="py-3 text-center">Bootstrap Modal</h2>
+        <div class="row py-3 justify-content-center">
+            <div class="col-md-3">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Launch Modal</button>
+                <botton id="showBtn" class="btn btn-success">click</botton>
+                <div class="modal fade" id="myModal" data-backdrop= "static">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal Title</h5>
+                                <button class="close" data-dismiss="modal">
+                                    <span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi labore
+                                incidunt reprehenderit, tempora, distinctio, cumque obcaecati expedita corrupti
+                                atque fuga Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sapiente, quia perferendis rem autem ab voluptates Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error fugit cumque rem minima quibusdam corporis tenetur obcaecati ipsa porro ipsam inventore, dolor hic labore numquam ducimus distinctio aliquid aliquam omnis. Asperiores accusantium sit, nobis quam pariatur blanditiis maiores exercitationem ratione vero earum repellendus perferendis non possimus repellat eius velit? Quidem, quisquam hic ipsa veritatis id ducimus vitae, consequatur, quis iure porro ipsum culpa sequi est laudantium voluptatibus ad alias natus sunt repudiandae doloribus suscipit? Natus, similique. Consequatur magnam suscipit iure sunt? Doloribus ipsum eaque, accusantium quasi vero cupiditate aliquid unde dolore optio voluptas. Delectus, amet! Temporibus beatae ex, possimus blanditiis alias, est exercitationem unde minima ipsa nam doloribus accusantium non odit molestias architecto voluptas libero eaque recusandae, aliquam autem veritatis dolore soluta tempora. In voluptatum exercitationem nobis quos consequuntur illum, excepturi, quas temporibus aperiam ex alias! Molestias numquam maiores repellendus. Sapiente architecto excepturi vero aperiam quae, officiis, sint mollitia eius hic consequuntur nisi, repellendus unde? Nemo, quaerat perferendis quod placeat iure aspernatur esse quibusdam incidunt quidem dolorum culpa ad labore natus necessitatibus sed architecto quae quam. Maiores vel deserunt possimus, iusto laudantium consequuntur aliquam inventore suscipit nisi repellendus quasi laboriosam! Voluptatem doloremque minima cum aliquid quod quia quae, ea impedit porro odio soluta. Eligendi, rem? Voluptate quam beatae architecto blanditiis ut cupiditate eligendi veritatis, ullam excepturi recusandae, reprehenderit, culpa necessitatibus repellendus maiores. Earum, officiis numquam modi atque dolor eos qui aspernatur minima eveniet. Quaerat numquam quo culpa repellat, aliquam excepturi, porro voluptate voluptates blanditiis, eaque deserunt molestiae. Quaerat exercitationem vitae veniam! Quisquam eaque perferendis asperiores tenetur eligendi. Laborum voluptates sint, autem ea ipsum natus quasi itaque neque voluptas necessitatibus illo delectus at quo corporis veritatis eligendi sapiente iste similique placeat magni fugiat soluta vitae. Quam expedita quos, aperiam nobis quasi dicta, inventore incidunt, numquam minima iste ut tenetur eaque. Delectus. nulla, provident ullam iusto ducimus iste expedita rerum voluptatum enim quos soluta unde corporis! nobis quos harum vitae recusandae veniam molestias esse? Ipsum.
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-dismiss="modal">
+                                    Close
+                                </button>
+                                <button class="btn btn-primary">
+                                    Save
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css orientation</title>
+    <style>
+        #parent{
+            display: flex;
+            border: 1px solid #000;
+        }
+        #parent > div{
+            border: 1px solid #000;
+        }
+    @media (orientation: landscape){
+        body{
+            background: pink;
+
+        }
+        #parent{
+            flex-direction: row;
+        }
+    }
+    @media (orientation: portrait){
+        body{
+            background:lightblue;
+            
+        }
+        #parent{
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+    <div id = "parent">
+        <div> Box 1</div>
+        <div> Box 2</div>
+        <div> Box 3</div>
+
+    </div>
+    
+</body>
+</html>

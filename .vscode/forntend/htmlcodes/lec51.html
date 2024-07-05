@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <!-- we have to use the link of the jsdelivr cdn of the latest version not the link provided in the youtube video  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2 class="py-3 text-center">Bootstrap Carousel</h2>
+        <div class="row py-3">
+            <div class="col">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="active"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="active"></button>
+                         
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="2.jpg" alt="" class="d-block w-100">
+                            <div class="carousel-captionn d-none d-md">
+                                <h5>First slide</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nostrum sed, eveniet itaque quaerat nulla ipsam, labore aliquid eligendi voluptas placeat possimus commodi est praesentium recusandae. Aut asperiores autem dolor!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="3.jpg" alt="" class="d-block w-100">
+                            <div class="carousel-captionn d-none d-md">
+                                <h5>Second slide</h5>
+                                <p>amet consectetur adipisicing elit. Iure nostrum sed, eveniet itaque quaerat nulla ipsam, labore aliquid eligendi voluptas placeat possimus commodi est praesentium recusandae. Aut asperiores autem dolor!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="4.jpg" alt="" class="d-block w-100">
+                            <div class="carousel-captionn d-none d-md">
+                                <h5>First slide</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nostrum sed, eveniet itaque quaerat nulla ipsam, labore aliquid eligendi voluptas placeat possimus commodi est praesentium recusandae. Aut asperiores autem dolor!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#myCarousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

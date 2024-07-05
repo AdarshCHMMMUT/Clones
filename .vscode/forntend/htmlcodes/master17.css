@@ -1,0 +1,14 @@
+h1{
+    font-family :Tangerine;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+/* it is not necessary two define the heading two times */
+p{
+    /* font-size :20px; */
+    font-size :3em
+    /* it means that it is 3 times the 
+     original font size of the text in browser */
+}

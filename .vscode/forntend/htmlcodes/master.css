@@ -1,0 +1,20 @@
+h1{
+    color:blanchedalmond
+}
+h2
+{color:blue;
+ /* if you are wishing to use any other property you can do it in this segment like  */
+background-color :brown;
+}
+div
+{
+    background-color: aqua;
+    border-color:brown;
+    border-width: 10px;
+    border-style: ridge;
+
+}
+span
+{
+     background-color: blueviolet;  /* here we can see the span overriding the the div */
+}
